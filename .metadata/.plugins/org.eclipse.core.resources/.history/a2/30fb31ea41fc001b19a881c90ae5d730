@@ -1,7 +1,0 @@
-package com.example.commonssucursales.models.entity;
-
-@Entity
-@Table(name="sucursales")
-public class Sucursal {
-
-}

@@ -1,5 +1,0 @@
-package com.example.microservicios.app.sucursales.services;
-
-public interface SucursalService  extends CommonService<Sucursal> {
-
-}

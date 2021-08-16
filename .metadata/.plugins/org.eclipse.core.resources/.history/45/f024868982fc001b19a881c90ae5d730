@@ -1,6 +1,0 @@
-package com.example.microservicios.app.sucursales.services.repository;
-
-public interface SucursalRepository extends PagingAndSortingRepository<Sucursal, Long>{
-
-
-}
