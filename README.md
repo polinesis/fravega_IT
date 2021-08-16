@@ -39,6 +39,10 @@ Ahora si podemos probar la aplicacion
 Base de datos: MySql 
  se utilizo el cliente maria DB HeidiSQL
  
+Entidades 
+	Sucursal     : esta entidad se persiste en base 	  
+	PuntoRetiro  : esta entidad no se persiste 
+
 Con POSTMAN - 
 
 Los datos de prueba se generan haciendo el siguiente POST :
@@ -129,6 +133,24 @@ Probamos la consulta de la sucursal mas cercana
 	 Salida : se debe asignar la sucursal abasto como la mas cercana
 	 
 GET 
+
+Aca es el unico get que tenemos en el response la entidad de :
+
+Response
+
+PuntoRetiro
+	    id	
+            latitud
+	    longitud
+	    capacidad
+	    
+	    Sucursal 
+	    		id
+			direccion
+			horarioAtencion 
+			latitud
+			longitud
+	    
 localhost:8090/api/sucursales/sucursalMasCernaca
 
 
@@ -138,7 +160,6 @@ localhost:8090/api/sucursales/sucursalMasCernaca
         "longitud": -34.575533
        
 }
-
 
 
 ** Test Unitarios **
