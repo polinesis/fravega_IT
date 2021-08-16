@@ -1,0 +1,40 @@
+package com.example.commons.services;
+
+public class CommonServiceImpl<E, R extends PagingAndSortingRepository<E, Long>> implements CommonService<E> {
+
+	
+	@Autowired
+	protected R respository;
+	
+	@Override
+	@Transactional(readOnly = true)
+	public Iterable<E> findAll() {
+		return  respository.findAll();
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Optional<E> findById(Long id) {
+		return respository.findById(id);
+	}
+
+	@Override
+	@Transactional
+	public E save(E entity) {
+		return respository.save(entity);
+	}
+
+	@Override
+	@Transactional
+	public void deleteById(Long id) {
+		respository.deleteById(id);
+
+	}
+
+	@Override
+	@Transactional(readOnly = true)
+	public Page<E> findAll(Pageable pageable) {
+		return respository.findAll(pageable);
+	}
+
+}

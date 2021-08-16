@@ -1,0 +1,8 @@
+package com.example.microservicios.app.sucursales.services;
+
+import com.example.commons.services.CommonService;
+import com.example.commons.sucursales.models.entity.Sucursal;
+
+public interface SucursalService  extends CommonService<Sucursal> {
+
+}

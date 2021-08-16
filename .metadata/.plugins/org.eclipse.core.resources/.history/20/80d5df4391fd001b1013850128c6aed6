@@ -1,0 +1,37 @@
+package com.example.microservicios.app.sucursales;
+
+import static org.junit.jupiter.api.Assertions.assertNull;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.commons.sucursales.models.entity.Sucursal;
+import com.example.microservicios.app.sucursales.controllers.SucursalController;
+
+@SpringBootTest
+class MicroservicioSucursalesApplicationTests {
+
+	
+	@Autowired
+	SucursalController sucursalController;
+	
+	@Test
+	void testCrear() {
+		
+		Sucursal sucursal = new Sucursal();
+		
+		sucursal.setId(35L);
+		sucursal.setLatitud(-34.57060);
+		sucursal.setLongitud(-58.72734);
+		
+		sucursalController.crear(sucursal, result);
+		
+		assertNull(actual);
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,9 @@
+package com.example.microservicios.app.sucursales.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+
+}

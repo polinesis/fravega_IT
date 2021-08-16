@@ -1,0 +1,2 @@
+spring.application.name=microservicio-sucursales
+server.port=${PORT:0}
