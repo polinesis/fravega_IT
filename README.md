@@ -10,7 +10,7 @@ eureka servidor de nombre
 mysql 8.0
 junit
 
-
+para la base hay que crear es siguiente esquema : db_microservicio_sucursales por cliente o con : CREATE DATABASE `db_microservicio_sucursales`;
 
 Microservicios
 
